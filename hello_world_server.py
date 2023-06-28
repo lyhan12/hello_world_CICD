@@ -7,7 +7,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         self.send_response(HTTPStatus.OK)
         self.end_headers()
-        self.wfile.write(b'Hello world : version3')
+        self.wfile.write(b'Hello world : version4')
 
 
 httpd = socketserver.TCPServer(('', 8000), Handler)
