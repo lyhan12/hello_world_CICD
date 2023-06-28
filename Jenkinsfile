@@ -12,7 +12,7 @@ pipeline {
                 echo 'check out'
                 git branch: 'main',
                     credentialsId: 'github', // For Private Repository
-                    url: '$GITHUB_REPO'
+                    url: "$GITHUB_REPO"
             }
         }
         stage('Docker Build') {
